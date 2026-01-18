@@ -1,0 +1,48 @@
+<mat-sidenav-container class="container">
+
+  <mat-sidenav mode="side" [opened]="opened" class="sidenav">
+
+    <div class="sidenav-header">
+      <mat-icon class="logo-icon">account_balance</mat-icon>
+      <span class="logo-text">Credi LS</span>
+    </div>
+
+    <mat-nav-list class="sidenav-menu">
+      <a mat-list-item routerLink="/clientes" routerLinkActive="active">
+        <mat-icon>people</mat-icon>
+        <span>Clientes</span>
+      </a>
+
+      <a mat-list-item routerLink="/emprestimos" routerLinkActive="active">
+        <mat-icon>payments</mat-icon>
+        <span>Empréstimos</span>
+      </a>
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+    <mat-toolbar class="toolbar">
+
+      <button mat-icon-button (click)="opened = !opened">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <span class="title">Credi LS Gestão</span>
+
+      <span class="spacer"></span>
+
+      <button mat-icon-button class="avatar-btn">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+
+    </mat-toolbar>
+
+    <main class="content">
+      <router-outlet></router-outlet>
+    </main>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
