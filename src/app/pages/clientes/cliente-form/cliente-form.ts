@@ -4,6 +4,7 @@ import {ClienteService} from '../../../core/services/cliente.service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {MatFormField, MatInput, MatLabel} from '@angular/material/input';
 import {MatButton} from '@angular/material/button';
+import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
 
 @Component({
   selector: 'app-cliente-form',
@@ -14,8 +15,10 @@ import {MatButton} from '@angular/material/button';
     MatFormField,
     MatLabel,
     MatInput,
-    MatButton
+    MatButton,
+    NgxMaskDirective
   ],
+  providers: [provideNgxMask()],
   templateUrl: './cliente-form.html',
   styleUrl: './cliente-form.css',
 })
