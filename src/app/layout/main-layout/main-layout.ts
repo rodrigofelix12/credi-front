@@ -3,7 +3,7 @@ import {MatSidenav, MatSidenavContainer, MatSidenavContent} from '@angular/mater
 import {MatNavList} from '@angular/material/list';
 import {MatIcon} from '@angular/material/icon';
 import {MatToolbar} from '@angular/material/toolbar';
-import {RouterOutlet} from '@angular/router';
+import {RouterLinkActive, RouterModule, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-main-layout',
@@ -15,7 +15,9 @@ import {RouterOutlet} from '@angular/router';
     MatIcon,
     MatSidenavContent,
     MatToolbar,
-    RouterOutlet
+    RouterOutlet,
+    RouterLinkActive,
+    RouterModule
   ],
   templateUrl: './main-layout.html',
   styleUrl: './main-layout.css',
