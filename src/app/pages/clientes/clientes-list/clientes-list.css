@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #212121;
+}
+
+.btn-novo {
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.table-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8eef7 100%);
+  color: #424242;
+  font-weight: 600;
+  padding: 16px;
+  text-align: left;
+}
+
+td {
+  padding: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+.acoes {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.acoes button {
+  color: #1565c0;
+  transition: all 0.2s ease;
+}
+
+.acoes button:hover {
+  color: #0d47a1;
+  transform: scale(1.2);
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  gap: 16px;
+  color: #999;
+}
+
+.loading p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  gap: 16px;
+  padding: 32px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  color: #d32f2f;
+  text-align: center;
+}
+
+.error mat-icon {
+  font-size: 48px;
+  width: 48px;
+  height: 48px;
+}
+
+.error p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  gap: 16px;
+  padding: 32px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  color: #999;
+  text-align: center;
+}
+
+.empty mat-icon {
+  font-size: 48px;
+  width: 48px;
+  height: 48px;
+}
+
+.empty p {
+  margin: 0;
+  font-size: 16px;
+}

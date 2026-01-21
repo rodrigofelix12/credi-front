@@ -59,4 +59,7 @@ export class ClienteForm implements OnInit {
     action.subscribe(() => this.router.navigate(['/clientes']));
   }
 
+  voltar() {
+    this.router.navigate(['/clientes']);
+  }
 }

@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { MainLayout } from './layout/main-layout/main-layout';
+import { ClientesResolver } from './core/resolvers/clientes.resolver';
 
 export const routes: Routes = [
   {
@@ -10,7 +11,10 @@ export const routes: Routes = [
         path: 'clientes',
         loadComponent: () =>
           import('./pages/clientes/clientes-list/clientes-list')
-            .then(c => c.ClientesList)
+            .then(c => c.ClientesList),
+        resolve: {
+          clientes: ClientesResolver
+        }
       },
       {
         path: 'clientes/novo',
